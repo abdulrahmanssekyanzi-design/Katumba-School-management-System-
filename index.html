@@ -3579,7 +3579,7 @@
 
         // ===== AOI FUNCTIONS =====
         function loadAoiMarks() {
-            if (currentRole !== 'admin') {
+            if (currentRole !== 'admin' : 'Teacher') {
                 showToast('⚠️ Only administrators can access AOI');
                 return;
             }
@@ -3774,7 +3774,7 @@
 
         // ===== EXAM FUNCTIONS =====
         function loadExamMarks() {
-            if (currentRole !== 'admin') {
+            if (currentRole !== 'admin' : 'Teacher') {
                 showToast('⚠️ Only administrators can access Exam marks');
                 return;
             }
