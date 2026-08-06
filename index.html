@@ -2503,7 +2503,7 @@
 
         // ===== CREDENTIALS =====
         const ADMIN_USERNAME = 'dkatumba352@gmail.com';
-        const ADMIN_PASSWORD = '0750917878';
+        const ADMIN_PASSWORD = '0750917878@b';
         const TEACHER_USERNAME = 'KatumbaDaniel';
         const TEACHER_PASSWORD = '123456780';
 
@@ -3306,8 +3306,8 @@
 
         // ===== SHOW PAGE =====
         function showPage(page) {
-            if (currentRole === 'teacher' && page !== 'dashboard' && page !== 'marks') {
-                showToast('🔒 Teachers can only access Marks Entry');
+            if (currentRole === 'teacher' && page !== 'dashboard' && page !== 'marks', 'AOI','exam') {
+                showToast('🔒 Teachers can only access Marks Entry, Exam Entry , AOI Entry');
                 return;
             }
 
@@ -3579,8 +3579,8 @@
 
         // ===== AOI FUNCTIONS =====
         function loadAoiMarks() {
-            if (currentRole !== 'admin') {
-                showToast('⚠️ Only administrators can access AOI');
+            if (currentRole !== 'admin', 'teacher') {
+                showToast('⚠️ Only administrators & Teachers can access AOI');
                 return;
             }
             const level = document.getElementById('aoiLevel').value;
@@ -3774,7 +3774,7 @@
 
         // ===== EXAM FUNCTIONS =====
         function loadExamMarks() {
-            if (currentRole !== 'admin') {
+            if (currentRole !== 'admin', 'teacher') {
                 showToast('⚠️ Only administrators can access Exam marks');
                 return;
             }
